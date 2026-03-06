@@ -1,3 +1,17 @@
+:root {
+    /* Azul Corporativo Profesional - Esquema sobrio */
+    --primary-gradient-start: #1e3a5f;
+    --primary-gradient-mid: #2c5282;
+    --primary-gradient-end: #355a87;
+    --accent-blue: #4a90e2;
+    --accent-blue-dark: #2c5282;
+    --accent-blue-light: rgba(74, 144, 226, 0.15);
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --bg-light: #f5f5f5;
+    --shadow-color: rgba(30, 58, 95, 0.15);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +20,9 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #f5f5f5;
+    line-height: 1.5;
+    color: var(--text-dark);
+    background: var(--bg-light);
 }
 
 .container {
@@ -20,30 +34,37 @@ body {
 
 /* Header con foto */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px;
+    background: linear-gradient(135deg, var(--primary-gradient-start) 0%, var(--primary-gradient-mid) 50%, var(--primary-gradient-end) 100%);
+    color: var(--text-light);
+    padding: 25px 30px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Removed glow effect for cleaner look */
 
 .photo-section {
     flex-shrink: 0;
 }
 
 .photo-placeholder {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4em;
     color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 .photo-placeholder img {
@@ -63,7 +84,7 @@ body {
 }
 
 .header-info h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 5px;
     font-weight: 700;
     text-transform: uppercase;
@@ -71,17 +92,17 @@ body {
 }
 
 .header-info h2 {
-    font-size: 1.2em;
+    font-size: 1.05em;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     opacity: 0.9;
 }
 
 .contact-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    font-size: 0.85em;
+    gap: 8px 10px;
+    font-size: 0.8em;
 }
 
 .contact-item {
@@ -94,6 +115,25 @@ body {
     font-size: 1.2em;
 }
 
+/* Certification Badges */
+.certification-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cert-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--text-light);
+    font-weight: 500;
+}
+
 /* Contenido principal */
 .content {
     display: grid;
@@ -104,34 +144,59 @@ body {
 /* Sidebar */
 .sidebar {
     background: #f8f9fa;
-    padding: 30px 25px;
-    border-right: 3px solid #667eea;
+    padding: 25px 20px;
+    border-right: 3px solid var(--accent-blue);
 }
 
 .main-content {
-    padding: 30px;
+    padding: 25px;
 }
 
 /* Secciones */
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .section-title {
-    color: #667eea;
+    color: var(--accent-blue-dark);
     font-size: 1.2em;
     font-weight: 700;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #667eea;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent-blue);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .text-justify {
     text-align: justify;
-    line-height: 1.7;
+    line-height: 1.6;
     font-size: 0.9em;
+}
+
+/* Sección de Logros Compacta */
+.achievements-compact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.achievement-item {
+    background: rgba(74, 144, 226, 0.08);
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    border: 1px solid rgba(74, 144, 226, 0.2);
+    color: #555;
+}
+
+.achievement-item strong {
+    color: var(--accent-blue-dark);
+    font-weight: 700;
+    font-size: 1.1em;
 }
 
 /* Habilidades */
@@ -162,7 +227,7 @@ body {
 
 .skill-level {
     height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: var(--accent-blue);
     border-radius: 4px;
     transition: width 0.3s ease;
 }
@@ -182,7 +247,7 @@ body {
 }
 
 .language-level {
-    color: #667eea;
+    color: var(--accent-blue-dark);
     font-weight: 500;
 }
 
@@ -195,13 +260,15 @@ body {
 }
 
 .tech-tag {
-    background: #667eea;
+    background: var(--accent-blue);
     color: white;
     padding: 6px 12px;
     border-radius: 15px;
     font-size: 0.75em;
     font-weight: 600;
     display: inline-block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 /* Certificaciones */
@@ -218,7 +285,7 @@ body {
 }
 
 .cert-date {
-    color: #667eea;
+    color: var(--accent-blue-dark);
     font-size: 0.9em;
     font-weight: 600;
 }
@@ -249,19 +316,20 @@ body {
 }
 
 .company {
-    color: #667eea;
+    color: var(--accent-blue-dark);
     font-size: 0.95em;
     font-weight: 600;
 }
 
 .date {
-    background: #667eea;
+    background: var(--accent-blue);
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.8em;
     font-weight: 600;
     white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .responsibilities {
@@ -298,7 +366,7 @@ body {
 }
 
 .institution {
-    color: #667eea;
+    color: var(--accent-blue-dark);
     font-size: 0.95em;
     font-weight: 600;
 }
@@ -311,11 +379,12 @@ body {
 
 /* Proyectos */
 .project-item {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
     background: #f8f9fa;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid var(--accent-blue);
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .project-title {
@@ -327,14 +396,123 @@ body {
 
 .project-tech {
     font-size: 0.85em;
-    color: #667eea;
+    color: var(--accent-blue-dark);
     margin-bottom: 8px;
+    font-weight: 600;
 }
 
 .project-description {
     font-size: 0.9em;
     color: #555;
     line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.proj-tag {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 2px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.metric-item {
+    background: rgba(0, 217, 255, 0.08);
+    color: #555;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: 600;
+    border: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+/* Sección Especial de Security Projects */
+.security-highlight {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.08), rgba(44, 82, 130, 0.08));
+    border-left: 5px solid var(--accent-blue-dark);
+    border-radius: 8px;
+    padding: 20px 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 217, 255, 0.15);
+}
+
+.security-project {
+    background: white;
+    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.security-project:hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 4px 16px rgba(74, 144, 226, 0.2);
+    transform: translateX(5px);
+}
+
+.security-project:last-child {
+    margin-bottom: 0;
+}
+
+.security-project-title {
+    color: #333;
+    font-size: 1.05em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sec-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-blue-dark), var(--accent-blue));
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 2px 3px;
+    box-shadow: 0 2px 6px rgba(0, 255, 136, 0.3);
+    transition: all 0.3s ease;
+}
+
+.sec-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 255, 136, 0.4);
+}
+
+.security-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.sec-metric {
+    background: rgba(0, 255, 136, 0.1);
+    color: #2d7a5c;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: 600;
+    border: 1px solid rgba(0, 255, 136, 0.3);
 }
 
 /* Intereses */
@@ -345,12 +523,14 @@ body {
 }
 
 .interest-tag {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--accent-blue);
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.85em;
     font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
 /* Estilos de impresión/PDF */
