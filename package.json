@@ -1,0 +1,34 @@
+{
+  "name": "cv-profesional-pdf",
+  "version": "1.0.0",
+  "description": "Generador de CV profesional en HTML/CSS con conversión a PDF - Diseño moderno y elegante",
+  "main": "index.html",
+  "scripts": {
+    "convert": "node convert-node.js",
+    "open": "open index.html || xdg-open index.html || start index.html",
+    "serve": "npx http-server -p 8080 -o"
+  },
+  "keywords": [
+    "cv",
+    "resume",
+    "curriculum",
+    "pdf",
+    "html-cv",
+    "professional-cv",
+    "plantilla-cv",
+    "curriculum-vitae"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/cv-profesional-pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/cv-profesional-pdf/issues"
+  },
+  "homepage": "https://github.com/tu-usuario/cv-profesional-pdf#readme"
+}
