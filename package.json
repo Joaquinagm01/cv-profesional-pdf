@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "convert": "node convert-node.js",
+    "optimize-photo": "sips -Z 900 --setProperty formatOptions 70 MIFOTO.JPG --out MIFOTO-OPT.JPG",
     "open": "open index.html || xdg-open index.html || start index.html",
     "serve": "npx http-server -p 8080 -o"
   },
