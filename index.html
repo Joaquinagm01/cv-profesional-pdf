@@ -3,249 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joaquina Gomez Manna - Soporte IT | Ciberseguridad | Datos y Full Stack</title>
-    <meta name="description" content="Perfil hibrido en Soporte IT, Ciberseguridad, Analisis de Datos/Funcional, Automatizacion y Desarrollo Full Stack. +2 anos de experiencia, 95% SLA sostenido, +40% velocidad de resolucion.">
-    <meta name="keywords" content="Soporte IT, Ciberseguridad, Analisis de Datos, Analisis Funcional, Automatizacion, Desarrolladora Full Stack, QA, Playwright, Node.js, Express, .NET, React, Active Directory, Office 365, OWASP, Evaluacion de Vulnerabilidades, SOC, Blue Team, Sentinel, MITRE ATT&CK, SOAR, Intune, Nessus, analisis de logs, hardening">
+    <title>Joaquina Gomez Manna - Cybersecurity Analyst CV ATS</title>
+    <meta name="description" content="CV ATS de Joaquina Gomez Manna, perfil en Ciberseguridad, Soporte IT, Analisis de Datos, Automatizacion y Desarrollo Full Stack.">
+    <meta name="keywords" content="Cybersecurity Analyst, Ciberseguridad, Security Operations, Incident Response, Vulnerability Management, Soporte IT, Analisis de Datos, Automatizacion, Full Stack, QA, Node.js, React, .NET, Azure, Nmap, Lumu, Sophos, Active Directory, Playwright">
     <meta name="author" content="Joaquina Gomez Manna">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --text: #111827;
+            --muted: #4b5563;
+            --line: #d1d5db;
+            --accent: #1f4b7a;
+            --bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: #f3f4f6;
+            line-height: 1.45;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg);
+            padding: 28px 30px 36px;
+            box-shadow: 0 10px 28px rgba(17, 24, 39, 0.08);
+            border-top: 6px solid var(--accent);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding-bottom: 18px;
+            border-bottom: 2px solid var(--line);
+            margin-bottom: 18px;
+        }
+
+        .photo {
+            width: 108px;
+            height: 108px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex: 0 0 auto;
+            border: 2px solid var(--line);
+            background: #e5e7eb;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .header > div:last-child {
+            padding-left: 2px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            line-height: 1.1;
+            letter-spacing: 0.2px;
+        }
+
+        .headline {
+            margin: 6px 0 8px;
+            color: var(--accent);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .contact {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .contact p {
+            margin: 2px 0;
+        }
+
+        .section {
+            margin-top: 16px;
+            padding: 14px 14px 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            background: #fafafa;
+        }
+
+        .section-title {
+            margin: 0 0 8px;
+            font-size: 16px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 4px;
+        }
+
+        .summary {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        ul {
+            margin: 8px 0 0 18px;
+            padding: 0;
+        }
+
+        li {
+            margin: 4px 0;
+        }
+
+        .item {
+            margin-top: 10px;
+            padding-top: 2px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: baseline;
+        }
+
+        .role {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .org {
+            margin: 2px 0 0;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .date {
+            font-size: 13px;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .subtle {
+            color: var(--muted);
+        }
+
+        .skills {
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+        .skills p {
+            margin: 5px 0;
+        }
+
+        .contact strong,
+        .summary strong,
+        .skills strong,
+        li strong {
+            color: #0f172a;
+        }
+
+        .projects .item {
+            border-left: 3px solid var(--line);
+            padding-left: 12px;
+            background: #ffffff;
+            border-radius: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .projects .item + .item {
+            margin-top: 12px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .page {
+                max-width: none;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .page {
+                padding: 18px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .item-header {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <main class="page">
         <header class="header">
-            <div class="photo-section">
-                <div class="photo-placeholder">
-                    <img src="MIFOTO-OPT.JPG" alt="Joaquina Gomez Manna - Soporte IT, Ciberseguridad y Full Stack">
-                </div>
+            <div class="photo">
+                <img src="MIFOTO-OPT.JPG" alt="Joaquina Gomez Manna">
             </div>
-            <div class="header-info">
+            <div>
                 <h1>JOAQUINA GOMEZ MANNA</h1>
-                <h2>IT Support | Cybersecurity Analyst | Data & Functional Analyst | Automation | Process Improvement | Full Stack Development | QA</h2>
-                <p style="font-size: 0.9em; opacity: 0.95; margin-top: 8px; font-weight: 400;">
-                    Estudiante avanzada de Ingenieria en Sistemas (UTN Rosario) | +2 anos de experiencia
-                </p>
-
-                <div class="certification-badges">
-                    <span class="cert-badge">Cisco Cybersecurity</span>
-                    <span class="cert-badge">Defensa de Redes</span>
-                    <span class="cert-badge">Seguridad de Endpoints</span>
-                    <span class="cert-badge">Gestion de Amenazas</span>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="icon">📧</span>
-                        <span>gomezmannajoaquina@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">📱</span>
-                        <span>+54 341 229 1597</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">📍</span>
-                        <span>Rosario, Santa Fe, Argentina</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">💼</span>
-                        <span>linkedin.com/in/joaquina-gomez-manna-491950264</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">🌐</span>
-                        <span>portfolio-joaquina.vercel.app</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">💻</span>
-                        <span>github.com/Joaquinagm01</span>
-                    </div>
+                <div class="headline">Cybersecurity Analyst | IT Support | Data & Functional Analysis | Automation | Full Stack | QA</div>
+                <div class="contact">
+                    <p>gomezmannajoaquina@gmail.com | +54 341 229 1597 | Rosario, Santa Fe, Argentina</p>
+                    <p>LinkedIn: linkedin.com/in/joaquina-gomez-manna-491950264</p>
+                    <p>Portfolio: portfolio-joaquina.vercel.app | GitHub: github.com/Joaquinagm01</p>
                 </div>
             </div>
         </header>
 
-        <div class="content">
-            <aside class="sidebar">
-                <section class="section">
-                    <h3 class="section-title">PERFIL PROFESIONAL</h3>
-                    <p class="text-justify" style="text-align: left;">
-                        Perfil hibrido tecnico-analitico con experiencia en <strong>IT Support corporativo</strong>, <strong>ciberseguridad aplicada</strong>, <strong>analisis de datos</strong>, <strong>analisis funcional</strong>, <strong>automatizacion de procesos</strong>, <strong>QA</strong> y <strong>desarrollo full stack</strong>. Me especializo en <strong>process improvement</strong>, data-driven decision making, reduccion de tiempos de respuesta y traduccion de necesidades de negocio en soluciones tecnicas escalables. Tambien tengo experiencia en <strong>triage de incidentes</strong>, <strong>monitoreo con Sentinel</strong>, <strong>reglas de deteccion basadas en MITRE ATT&CK</strong>, <strong>playbooks en SOAR</strong>, <strong>hardening con Intune</strong>, <strong>analisis de vulnerabilidades con Nessus</strong> y <strong>analisis de logs</strong>.
-                    </p>
-                </section>
+        <section class="section">
+            <h2 class="section-title">Perfil Profesional</h2>
+            <p class="summary">
+                Estudiante de 4to año de Ingenieria en Sistemas en la UTN Rosario con mas de 2 años de experiencia en soporte corporativo y ciberseguridad. He trabajado con mas de 200 usuarios, manteniendo 95% de SLA y mejorando 40% los tiempos de resolucion. Mi foco actual es Cybersecurity Analyst, con base en security operations, incident response, vulnerability management y administracion de herramientas de seguridad.
+            </p>
+        </section>
 
-                <div class="achievements-compact">
-                    <div class="achievement-item"><strong>95%</strong> SLA sostenido</div>
-                    <div class="achievement-item"><strong>+40%</strong> velocidad resolucion</div>
-                    <div class="achievement-item"><strong>-35%</strong> incidentes criticos</div>
-                    <div class="achievement-item"><strong>+200</strong> usuarios activos</div>
-                    <div class="achievement-item"><strong>+80</strong> equipos modernizados</div>
-                    <div class="achievement-item"><strong>+50</strong> usuarios capacitados</div>
+        <section class="section">
+            <h2 class="section-title">Experiencia Profesional</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">Analista de Ciberseguridad</p>
+                        <p class="org">Tecpoint S.A. | Rosario</p>
+                    </div>
+                    <div class="date">May 2026 - Actualidad</div>
                 </div>
+                <ul>
+                    <li>Monitoreo de seguridad y soporte a proyectos de ciberseguridad.</li>
+                    <li>Diseno de politicas y procedimientos de seguridad y apoyo a auditorias.</li>
+                    <li>Gestion de usuarios, accesos, informes y evaluacion de vulnerabilidades y riesgos.</li>
+                    <li>Uso de Sophos, Lumu, Active Directory y MSP para monitoreo de consolas e infraestructura.</li>
+                </ul>
+            </div>
 
-                <section class="section">
-                    <h3 class="section-title">HABILIDADES POR AREA</h3>
-                    <div class="skills">
-                        <div class="skill-item">
-                            <span class="skill-name"><span class="skill-topic">Soporte IT e Infraestructura</span> Active Directory, Office 365, Citrix, Jira, PowerShell</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name"><span class="skill-topic">Ciberseguridad</span> Kali Linux, Nmap, Wireshark, OWASP Top 10, Hardening, Evaluacion de Vulnerabilidades</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name"><span class="skill-topic">Analisis de Datos y Funcional</span> analisis de datos operativos, documentacion funcional, mejora de procesos</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name"><span class="skill-topic">Automatizacion</span> automatizacion de tareas y flujos con Jira y scripts para mayor eficiencia operativa</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name"><span class="skill-topic">Full Stack y QA</span> diseno e implementacion de sistemas, Node.js, Express, .NET, React, JWT, arquitectura en capas, logica de negocio, QA y pruebas automatizadas con Playwright</span>
-                        </div>
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">Soporte Informatico</p>
+                        <p class="org">Asociacion de Cooperativas Argentinas (ACA) | Rosario</p>
                     </div>
-                </section>
+                    <div class="date">Mar 2025 - Abr 2026</div>
+                </div>
+                <ul>
+                    <li>Soporte tecnico de primer nivel para mas de 200 usuarios con 95% de SLA sostenido.</li>
+                    <li>Administracion de entornos Microsoft y continuidad operativa.</li>
+                    <li>Automatizacion de procesos con Jira y datos externos, reduciendo 40% los tiempos de resolucion.</li>
+                    <li>Participacion en proyectos de mejora continua y triage de incidentes.</li>
+                </ul>
+            </div>
 
-                <section class="section">
-                    <h3 class="section-title">CERTIFICACIONES</h3>
-                    <div class="cert-item">
-                        <strong>Cisco Networking Academy</strong> - Fundamentos de Redes, Introduccion a Ciberseguridad, Defensa de Redes, Seguridad de Endpoints, Gestion de Amenazas y Configuracion Inicial de Dispositivos
-                        <span class="cert-date">2026</span>
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">Soporte Informatico</p>
+                        <p class="org">Tribunal de Faltas - Municipalidad de Rosario | Rosario</p>
                     </div>
-                    <div class="cert-item">
-                        <strong>Trayecto Junior Cybersecurity Analyst</strong> - Cisco
-                        <span class="cert-date">2026</span>
-                    </div>
-                    <div class="cert-item">
-                        <strong>Cybersecurity Basics</strong> - Ekoparty Hackademy
-                        <span class="cert-date">2026</span>
-                    </div>
-                    <div class="cert-item">
-                        <strong>Inteligencia Artificial para Ciberseguridad</strong> - Formacion aplicada en deteccion de amenazas
-                        <span class="cert-date">2026</span>
-                    </div>
-                </section>
+                    <div class="date">Mar 2024 - Feb 2025</div>
+                </div>
+                <ul>
+                    <li>Mantenimiento y actualizacion de hardware y software con modernizacion de mas de 80 equipos.</li>
+                    <li>Testing de nuevas implementaciones, relevamiento de datos y documentacion tecnica.</li>
+                    <li>Capacitacion y acompanamiento a mas de 50 usuarios.</li>
+                </ul>
+            </div>
+        </section>
 
-                <section class="section">
-                    <h3 class="section-title">IDIOMAS</h3>
-                    <div class="language-item">
-                        <span class="language-name">Espanol</span>
-                        <span class="language-level">Nativo</span>
+        <section class="section">
+            <h2 class="section-title">Educacion</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">Ingenieria en Sistemas (4to año)</p>
+                        <p class="org">Universidad Tecnologica Nacional - Rosario</p>
                     </div>
-                    <div class="language-item">
-                        <span class="language-name">Ingles</span>
-                        <span class="language-level">Avanzado (Cambridge)</span>
+                    <div class="date">2020 - Actualidad</div>
+                </div>
+                <p class="subtle">Estudios de grado en curso.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">Bachiller en Economia</p>
+                        <p class="org">Escuela Superior de Comercio "Libertador General San Martin"</p>
                     </div>
-                </section>
-            </aside>
+                    <div class="date">2015 - 2019</div>
+                </div>
+            </div>
+        </section>
 
-            <main class="main-content">
-                <section class="section">
-                    <h3 class="section-title">EXPERIENCIA PROFESIONAL</h3>
+        <section class="section">
+            <h2 class="section-title">Certificaciones</h2>
+            <ul>
+                <li>Cisco Networking Academy - Fundamentos de Redes, Introduccion a Ciberseguridad, Defensa de Redes, Seguridad de Endpoints, Gestion de Amenazas y Configuracion Inicial de Dispositivos (2026)</li>
+                <li>Trayecto Junior Cybersecurity Analyst - Cisco (2026)</li>
+                <li>Cybersecurity Basics - Ekoparty Hackademy (2026)</li>
+                <li>Inteligencia Artificial para Ciberseguridad - Formacion aplicada en deteccion de amenazas (2026)</li>
+                <li>Lumu - Plataforma de monitoreo y deteccion de amenazas (2026)</li>
+            </ul>
+        </section>
 
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div>
-                                <h4 class="job-title">IT Support Analyst</h4>
-                                <p class="company">Asociacion de Cooperativas Argentinas (ACA) | Rosario</p>
-                            </div>
-                            <span class="date">Mar 2025 - Actualidad</span>
-                        </div>
-                        <ul class="responsibilities">
-                            <li>Soporte de primer nivel para <strong>+200 usuarios</strong> en entorno corporativo, con <strong>SLA sostenido del 95%</strong>.</li>
-                            <li>Administracion de <strong>Active Directory</strong>, <strong>Office 365</strong> y herramientas ITSM, garantizando continuidad operativa.</li>
-                            <li>Implementacion de <strong>automatizaciones y workflows</strong> con Jira/PowerShell, logrando <strong>reduccion del 90% en tiempos de resolucion</strong>.</li>
-                            <li>Analisis de incidentes y priorizacion por impacto para mejorar calidad de servicio, eficiencia operativa y toma de decisiones basada en datos.</li>
-                            <li>Participacion en <strong>monitoreo con Sentinel</strong>, colaborando en reglas de deteccion basadas en <strong>MITRE ATT&CK</strong> y automatizaciones con <strong>playbooks en SOAR</strong>.</li>
-                            <li>Trabajo en <strong>hardening de equipos y usuarios con Intune</strong>, analisis de <strong>vulnerabilidades con Nessus</strong> y revision de <strong>logs</strong> para detectar comportamientos anormales y escalar incidentes cuando corresponde.</li>
-                        </ul>
+        <section class="section">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills">
+                <p><strong>Frontend:</strong> React, Angular 20, Next.js, TailwindCSS, Bootstrap 5, JavaScript, TypeScript</p>
+                <p><strong>Backend:</strong> Node.js, Express, .NET 9, Python, Prisma, MikroORM, JWT</p>
+                <p><strong>Bases de datos:</strong> MySQL, PostgreSQL, MongoDB</p>
+                <p><strong>DevOps y Cloud:</strong> Docker, Azure DevOps, Azure, Git, GitHub, Terraform, XAMPP</p>
+                <p><strong>Seguridad y QA:</strong> Kali Linux, Nmap, Cortex, Lumu, Sophos, VirtualBox, VMs, Playwright, Active Directory management, MSP, SAP</p>
+                <p><strong>Lenguajes y sistemas:</strong> Python, JavaScript, TypeScript, PHP, C, Pascal, Smalltalk, Windows, Linux, Ubuntu, iOS</p>
+                <p><strong>Oficina y modelado:</strong> Microsoft 365, Excel, SAP, AutoCAD, Axure, AnyLogic, MD, DER</p>
+            </div>
+        </section>
+
+        <section class="section projects">
+            <h2 class="section-title">Proyectos</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">Sistema de Gestion de Vuelos</p>
+                        <p class="org">Node.js, Express, MySQL, JWT, PHP, MVC, Bootstrap 5</p>
                     </div>
+                </div>
+                <p class="summary">Proyecto academico full stack para gestion de vuelos, reservas, promociones y reportes operativos con control por roles. Incluye una API REST en Node.js + Express y una version en PHP con patron MVC.</p>
+            </div>
 
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div>
-                                <h4 class="job-title">IT Support Specialist</h4>
-                                <p class="company">Tribunal de Faltas - Municipalidad de Rosario | Rosario</p>
-                            </div>
-                            <span class="date">Mar 2024 - Feb 2025</span>
-                        </div>
-                        <ul class="responsibilities">
-                            <li><strong>Modernizacion de +80 equipos</strong> y actualizacion de entornos hardware/software, con <strong>reduccion de incidentes del 35%</strong>.</li>
-                            <li>Testing de implementaciones, relevamiento funcional y documentacion tecnica para estandarizar procesos.</li>
-                            <li>Capacitacion y acompanamiento a <strong>+50 usuarios</strong>, mejorando adopcion de herramientas y productividad del area.</li>
-                        </ul>
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">AlojARG - Sistema de reservas</p>
+                        <p class="org">.NET 9, Angular 20, TypeScript, MySQL, JWT, Docker, FluentValidation</p>
                     </div>
-                </section>
+                </div>
+                <p class="summary">Sistema completo de gestion y reserva de alojamientos turisticos en Argentina con Clean Architecture, autenticacion JWT, filtros dinamicos y dashboard administrativo.</p>
+            </div>
 
-                <section class="section">
-                    <h3 class="section-title">EDUCACION</h3>
-
-                    <div class="education-item">
-                        <div class="education-header">
-                            <div>
-                                <h4 class="degree">Ingenieria en Sistemas (4to año)</h4>
-                                <p class="institution">Universidad Tecnologica Nacional - Rosario</p>
-                            </div>
-                            <span class="date">2020 - Actualidad</span>
-                        </div>
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">BookCode - Gestion y resenas</p>
+                        <p class="org">React, TypeScript, Node.js, Express, MikroORM, MySQL, JWT, Redis</p>
                     </div>
-                </section>
+                </div>
+                <p class="summary">Plataforma full stack para descubrir, gestionar y resenar libros, con autenticacion segura, catalogo con busqueda avanzada, perfiles y recomendaciones.</p>
+            </div>
 
-                <section class="section">
-                    <h3 class="section-title">PROYECTOS DESTACADOS</h3>
-
-                    <div class="project-item">
-                        <h4 class="project-title">Sistema de Gestion de Vuelos (En proceso)</h4>
-                        <p class="project-tech"><strong>Stack:</strong> <span class="proj-tag">Node.js</span> <span class="proj-tag">Express</span> <span class="proj-tag">MySQL</span> <span class="proj-tag">JWT</span> <span class="proj-tag">PHP MVC</span></p>
-                        <p class="project-description">
-                            Sistema de gestion de vuelos con <strong>API REST en Node.js + Express</strong>, autenticacion JWT, <strong>control de acceso por roles</strong>, gestion de reservas, promociones y reportes. Incluye reglas de negocio (cancelacion con 72h), arquitectura en capas (controllers, models, middlewares) y segunda implementacion en PHP con patron MVC.
-                        </p>
-                        <div class="project-metrics">
-                            <span class="metric-item">Seguridad por roles</span>
-                            <span class="metric-item">Reglas de negocio</span>
-                            <span class="metric-item">Arquitectura en capas</span>
-                            <span class="metric-item">Enfoque funcional</span>
-                        </div>
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <p class="role">FISICA-MODELO - Simulaciones interactivas</p>
+                        <p class="org">JavaScript, p5.js, HTML5, CSS3, Chart.js, Node.js</p>
                     </div>
+                </div>
+                <p class="summary">Simulaciones educativas interactivas para explicar Bernoulli y las leyes de Newton mediante visualizaciones en tiempo real.</p>
+            </div>
 
-                    <div class="project-item">
-                        <h4 class="project-title">AlojARG - Sistema de reservas</h4>
-                        <p class="project-tech"><strong>Stack:</strong> <span class="proj-tag">.NET 9</span> <span class="proj-tag">Angular</span> <span class="proj-tag">MySQL</span> <span class="proj-tag">JWT</span></p>
-                        <p class="project-description">
-                            Solucion full stack con Clean Architecture, autenticacion segura y logica de negocio para gestion de alojamientos con busqueda avanzada.
-                        </p>
-                    </div>
+        </section>
 
-                    <div class="project-item">
-                        <h4 class="project-title">BookCode - Gestion y resenas</h4>
-                        <p class="project-tech"><strong>Stack:</strong> <span class="proj-tag">React</span> <span class="proj-tag">TypeScript</span> <span class="proj-tag">Vite</span> <span class="proj-tag">TailwindCSS</span> <span class="proj-tag">Framer Motion</span> <span class="proj-tag">Node.js</span> <span class="proj-tag">Express</span> <span class="proj-tag">JWT</span> <span class="proj-tag">MySQL</span> <span class="proj-tag">MikroORM</span> <span class="proj-tag">Redis</span> <span class="proj-tag">Google Books API</span> <span class="proj-tag">OpenLibrary API</span></p>
-                        <p class="project-description">
-                            Plataforma web para descubrir, gestionar y resenar libros. Incluye autenticacion con JWT, catalogo con busqueda avanzada, resenas con moderacion automatica, perfiles de usuario, listas personalizadas, recomendaciones inteligentes e integracion con APIs externas como Google Books y OpenLibrary.
-                        </p>
-                        <div class="project-metrics">
-                            <span class="metric-item">Frontend: React, TypeScript, Vite, TailwindCSS, Framer Motion</span>
-                            <span class="metric-item">Backend: Node.js, Express, JWT</span>
-                            <span class="metric-item">Base de datos: MySQL, MikroORM</span>
-                            <span class="metric-item">Cache e integraciones: Redis, Google Books API, OpenLibrary API</span>
-                        </div>
-                        <div class="project-metrics">
-                            <span class="metric-item">Arquitectura full stack</span>
-                            <span class="metric-item">Seguridad y validaciones</span>
-                            <span class="metric-item">APIs REST</span>
-                            <span class="metric-item">UX/UI y performance</span>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <h4 class="project-title">FISICA-MODELO - Simulaciones interactivas</h4>
-                        <p class="project-tech"><strong>Stack:</strong> <span class="proj-tag">JavaScript</span> <span class="proj-tag">p5.js</span> <span class="proj-tag">Chart.js</span> <span class="proj-tag">Node.js</span></p>
-                        <p class="project-description">
-                            Simulaciones educativas en tiempo real con visualizacion de datos para explicar principios de aerodinamica y fisica aplicada.
-                        </p>
-                    </div>
-
-                    <div class="project-item">
-                        <h4 class="project-title">Gestion de Stock</h4>
-                        <p class="project-tech"><strong>Stack:</strong> <span class="proj-tag">React</span> <span class="proj-tag">TailwindCSS</span> <span class="proj-tag">Node.js</span> <span class="proj-tag">Express</span> <span class="proj-tag">Prisma</span> <span class="proj-tag">MySQL</span></p>
-                        <p class="project-description">
-                            Prototipo full stack para control de inventario con CRUD, filtrado dinamico y seguimiento de stock en tiempo real.
-                        </p>
-                    </div>
-                </section>
-            </main>
-        </div>
-    </div>
+        <section class="section">
+            <h2 class="section-title">Idiomas</h2>
+            <ul>
+                <li>Espanol - Nativo</li>
+                <li>Ingles - Avanzado (Cambridge)</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
